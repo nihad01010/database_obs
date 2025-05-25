@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A6AABD78-18B3-4238-B4E1-980555C6A2E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Veri_tabanii</RootNamespace>
+    <AssemblyName>Veri_tabanii</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.9.0.4\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BilgiGirisiFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgiGirisiFormu.Designer.cs">
+      <DependentUpon>BilgiGirisiFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DersProgramiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DersProgramiForm.Designer.cs">
+      <DependentUpon>DersProgramiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisFormu.Designer.cs">
+      <DependentUpon>GirisFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVariables.cs" />
+    <Compile Include="KullaniciEkleFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkleFormu.Designer.cs">
+      <DependentUpon>KullaniciEkleFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotEklemeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotEklemeForm.Designer.cs">
+      <DependentUpon>NotEklemeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotGoruntuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotGoruntuleForm.Designer.cs">
+      <DependentUpon>NotGoruntuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciAnaMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciAnaMenuForm.Designer.cs">
+      <DependentUpon>OgrenciAnaMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciAramaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciAramaForm.Designer.cs">
+      <DependentUpon>OgrenciAramaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciBilgiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciBilgiForm.Designer.cs">
+      <DependentUpon>OgrenciBilgiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciEkleForm.Designer.cs">
+      <DependentUpon>OgrenciEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciForm.Designer.cs">
+      <DependentUpon>OgrenciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciGuncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciGuncelleme.Designer.cs">
+      <DependentUpon>OgrenciGuncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciListeleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciListeleForm.Designer.cs">
+      <DependentUpon>OgrenciListeleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciSilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciSilForm.Designer.cs">
+      <DependentUpon>OgrenciSilForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BilgiGirisiFormu.resx">
+      <DependentUpon>BilgiGirisiFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DersProgramiForm.resx">
+      <DependentUpon>DersProgramiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisFormu.resx">
+      <DependentUpon>GirisFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkleFormu.resx">
+      <DependentUpon>KullaniciEkleFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotEklemeForm.resx">
+      <DependentUpon>NotEklemeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotGoruntuleForm.resx">
+      <DependentUpon>NotGoruntuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciAnaMenuForm.resx">
+      <DependentUpon>OgrenciAnaMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciAramaForm.resx">
+      <DependentUpon>OgrenciAramaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciBilgiForm.resx">
+      <DependentUpon>OgrenciBilgiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciEkleForm.resx">
+      <DependentUpon>OgrenciEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciForm.resx">
+      <DependentUpon>OgrenciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciGuncelleme.resx">
+      <DependentUpon>OgrenciGuncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciListeleForm.resx">
+      <DependentUpon>OgrenciListeleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciSilForm.resx">
+      <DependentUpon>OgrenciSilForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
